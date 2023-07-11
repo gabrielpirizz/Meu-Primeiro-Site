@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Arte - Agendamento </title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        /* Estilos adicionais */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main {
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
+        }
+        
+        .header {
+            margin-bottom: 20px;
+        }
+        
+        .content {
+            margin-bottom: 20px;
+        }
+        
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f2f2f2;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .menu {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .menu ul {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        
+        .menu ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        .menu ul li a {
+            text-decoration: none;
+        }
+        
+        .menu ul li a img {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        
+        #caixa-de-registro {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        #caixa-de-registro h1 {
+            font-size: 24px;
+        }
+        
+        #caixa-de-registro fieldset {
+            border: none;
+            padding: 10px;
+        }
+        
+        #caixa-de-registro label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        #caixa-de-registro input[type="text"],
+        #caixa-de-registro select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        
+        #caixa-de-registro input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        
+        #caixa-de-registro a {
+            text-decoration: none;
+        }
+        
+        #caixa-de-registro strong {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="index.html"><img src="assets/icons/home.png" alt="#home" width="20px"> Página Inicial</a></li>
+            </ul>
+            <ul>
+                <li><a href="horarios.html"><img src="assets/icons/call.png" alt="#contato" width="20px"> Horários de Atendimento</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="assets/icons/calendar.png" alt="#agendar" width="20px"> Agendar</a></li>
+            </ul>
+            <ul>
+                <li><a href="maps.html"><img src="assets/icons/pointer.png" alt="#localização" width="20px"> Conheça nossa clínica</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header"> 
+                <!-- Aqui vai o seu header -->
+                <img src="assets/header2.png" alt="Header da página da clínica" width="800px"> 
+            </div>
+    
+            <div class="content">
+                <!-- Aqui vai o seu conteúdo -->
+                <h1><strong>MARQUE JÁ SUA CONSULTA</strong></h1>
+                <h2><strong><i>PREENCHA OS CAMPOS ABAIXO</i></strong></h2>
+                <p>Após preencher os dados iremos lhe contatar via Whatsapp</p>
+                <div id="foto-content-paginainicial">
+                    <h1>REVISÃO TOTALMENTE GRATUITA</h1>
+                    <a href="#agendar"><img src="assets/medicos1.jpg" alt="chamar" width="350px" class="medico" id="medico" style="border-radius: 100%;"></a>
+                </div>
+            </div>
+                
+            <div id="caixa-de-registro">
+                <h1>FORMULÁRIO DE CADASTRO</h1>
+            
+                <fieldset name="registro">
+                    <legend>Cadastro</legend>
+            
+                    <label>Seu Nome Completo:</label>
+                    <input type="text" placeholder="Digite seu nome completo"><br>
+            
+                    <label>Telefone Whatsapp:</label>
+                    <input type="text" placeholder="Digite seu número"><br>
+            
+                    <label>Selecione seu Tratamento:</label>
+                    <select name="Tratamento" id="tratamento">
+                        <option value="">Selecione uma opção</option>
+                        <option value="aparelho-dentário">Aparelho dentário</option>
+                        <option value="limpeza-dental">Limpeza Dental</option>
+                        <option value="lente-dentaria">Instalar lente</option>
+                        <option value="remover-carie">Remover Cárie</option>
+                    </select><br>
+            
+                    <input type="checkbox" name="aceita-termos">
+                    <a href="https://www.instagram.com/dio_makethechange/" target="_blank">Aceito termos e condições</a><br>
+            
+                    <strong>Ou agende pelo telefone <a href="https://www.instagram.com/dio_makethechange/">(51) 9999-9999</a></strong>
+                    <label>Enviar Informações <button>ENVIAR</button></label>
+                </fieldset>
+            </div>
+    
+            <div class="footer">
+                <!-- Aqui vai o seu rodapé -->
+                <a href="https://www.instagram.com/dio_makethechange/" target="_blank"><img src="assets/icons/insta.png" alt="Logo insta" width="50px"></a>
+                <a href="https://www.instagram.com/dio_makethechange/" target="_blank"><img src="assets/icons/face.png" alt="Logo facebook contato" width="50px"></a>
+                <a href="https://www.instagram.com/dio_makethechange/" target="_blank"><img src="assets/icons/twitter.png" alt="Logo twitter contato" width="50px"></a>
+                <a href="https://www.instagram.com/dio_makethechange/" target="_blank"><img src="assets/icons/whatsapp.png" alt="Logo whatsapp contato" width="50px"></a>
+                <div class="formas-pagamento">
+                    <img src="assets/formas_pagamento.png" alt="Fotos das formas de pagamento" width="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
